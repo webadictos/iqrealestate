@@ -1,0 +1,26 @@
+{
+  "name": "wa-blocks-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "dev": "wp-scripts build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/block-editor": "^9.8.0",
+    "@wordpress/components": "^20.0.0",
+    "@wordpress/create-block": "^4.0.0",
+    "@wordpress/i18n": "^4.16.0",
+    "@wordpress/scripts": "^24.0.0"
+  },
+  "dependencies": {
+    "simplelightbox": "^2.14.2",
+    "swiper": "^11.0.3"
+  }
+}

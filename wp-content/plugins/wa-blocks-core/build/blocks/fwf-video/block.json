@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "fw-festival-2024/fwf-video",
+  "version": "0.1.0",
+  "title": "FWF - Video",
+  "category": "widgets",
+  "icon": "format-video",
+  "description": "Video Memoria FWF.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fwf-video",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

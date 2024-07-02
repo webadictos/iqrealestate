@@ -1,0 +1,31 @@
+.newsletter-form {
+  .form-control {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    border-radius: 0;
+    padding: 0.6875rem 0.9375rem;
+  }
+  .newsletter__form-subscriptions {
+    background: #f9f2e8;
+    h4 {
+      padding: 1.5rem 0 0;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-underline-offset: 0.4375rem;
+      text-align: center;
+    }
+    .form-check {
+      padding: 0 0 1.5rem 3rem;
+    }
+  }
+}
+
+.modal-newsletter__spinner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: column;
+}

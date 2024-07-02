@@ -1,0 +1,182 @@
+@import '../../../assets/scss/theme_functions';
+//@import '../../../assets/scss/theme-vars';
+
+.has-iq-primary-color {
+  color: var(--wp--preset--color--iq-primary) !important;
+}
+.has-iq-primary-background-color {
+  background-color: var(--wp--preset--color--iq-primary) !important;
+}
+.has-iq-primary-border-color {
+  border-color: var(--wp--preset--color--iq-primary) !important;
+}
+.has-iq-secondary-color {
+  color: var(--wp--preset--color--iq-secondary) !important;
+}
+.has-iq-secondary-background-color {
+  background-color: var(--wp--preset--color--iq-secondary) !important;
+}
+.has-iq-secondary-border-color {
+  border-color: var(--wp--preset--color--iq-secondary) !important;
+}
+
+.has-iq-green-color {
+  color: var(--wp--preset--color--iq-green) !important;
+}
+.has-iq-green-background-color {
+  background-color: var(--wp--preset--color--iq-green) !important;
+}
+.has-iq-green-border-color {
+  border-color: var(--wp--preset--color--iq-green) !important;
+}
+
+.has-iq-green-opacity-color {
+  color: var(--wp--preset--color--iq-green-opacity) !important;
+}
+.has-iq-green-opacity-background-color {
+  background-color: var(--wp--preset--color--iq-green-opacity) !important;
+}
+.has-iq-green-opacity-border-color {
+  border-color: var(--wp--preset--color--iq-green-opacity) !important;
+}
+
+.has-iq-light-grey-color {
+  color: var(--wp--preset--color--iq-light-grey) !important;
+}
+.has-iq-light-grey-background-color {
+  background-color: var(--wp--preset--color--iq-light-grey) !important;
+}
+.has-iq-light-grey-border-color {
+  border-color: var(--wp--preset--color--iq-light-grey) !important;
+}
+
+.has-iq-dark-grey-color {
+  color: var(--wp--preset--color--iq-dark-grey) !important;
+}
+.has-iq-dark-grey-background-color {
+  background-color: var(--wp--preset--color--iq-dark-grey) !important;
+}
+.has-iq-dark-grey-border-color {
+  border-color: var(--wp--preset--color--iq-dark-grey) !important;
+}
+
+.iq-hero-section {
+  min-height: rem(352px);
+  align-items: flex-end;
+  padding-bottom: rem(23px);
+
+  @media screen and (min-width: 992px) {
+    min-height: rem(511px);
+    padding-bottom: rem(73px);
+  }
+
+  .proyectos-nav {
+    text-transform: uppercase;
+    font-size: fluid(10px, 14px);
+    color: #fff;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-top: rem(22px);
+    flex-direction: column;
+    // padding: 0;
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+    }
+
+    li {
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(2) {
+        a {
+          &::before {
+            background-color: transparent;
+            border: rem(0.5px) solid #fff;
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &::before {
+          content: '';
+          width: rem(18px);
+          height: rem(18px);
+          display: block;
+          background-color: #74bebb;
+          border: rem(0.5px) solid #74bebb;
+        }
+
+        color: #fff;
+      }
+    }
+  }
+}
+
+.iq-hero-bottom {
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  min-height: rem(260px);
+  @media screen and (min-width: 425px) {
+    min-height: rem(340px);
+  }
+  @media screen and (min-width: 992px) {
+    min-height: rem(430px);
+  }
+  a,
+  a:hover {
+    color: #fff;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.wp-block-heading.is-style-heading-light {
+  font-size: fluid(28px, 38px);
+  font-weight: 400;
+}
+
+.wp-block-heading.is-style-heading-border {
+  font-size: fluid(28px, 47px);
+  font-weight: 400;
+  border-left: rem(2px) solid #535c5d;
+  padding-left: rem(27px);
+}
+
+.wp-block-heading.is-style-heading-big {
+  font-size: fluid(40px, 70px);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.is-style-paragraph-limited-width,
+.paragraph-limited-width {
+  @media screen and (min-width: 992px) {
+    max-width: rem(815px);
+  }
+}
+
+.is-style-paragraph-font-small {
+  font-size: fluid(10px, 14px);
+}
+
+.is-style-paragraph-font-medium {
+  font-size: fluid(12px, 16px);
+}
+.is-style-paragraph-hero-txt {
+  font-size: fluid(16px, 30px);
+}
+.profile-equipo {
+  img {
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    object-position: 0 -20px;
+  }
+}
+
+.iqhero-with-text .wp-block-cover__inner-container {
+  width: 100% !important;
+  margin: 0 auto !important;
+}

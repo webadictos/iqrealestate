@@ -1,0 +1,52 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../utils/theme_functions';
+.wp-block-wa-blocks-core-wa-slides {
+  --wa-gallery-max-width: 100%;
+  padding: 0 1rem;
+
+  &.is-style-wa-slides-simple {
+    padding: 0;
+
+    .wp-block-wa-blocks-core-wa-slides__meta {
+      display: none;
+    }
+  }
+
+  &__caption {
+    text-align: center;
+  }
+
+  &__btn {
+    margin: 0 0 2rem;
+  }
+  .swiper {
+    max-width: var(--wa-gallery-max-width, 100%);
+
+    .swiper-slide {
+      .wp-block-wa-blocks-core-wa-slides__meta {
+        max-width: 90%;
+        min-height: rem(142px);
+      }
+
+      .wp-block-wa-blocks-core-wa-slides__figure {
+        position: relative;
+        .block-editor-url-input__button {
+          position: absolute;
+          bottom: 3%;
+          left: 3%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+:root {
+  --nav-bg: transparent;
+  --nav-color: #231f20;
+  --big-title-size: clamp(2rem, 3.7vw + 1.3rem, 4.5rem);
+  --big-title-size2: clamp(2rem, 3.4vw + 1.3rem, 4.5rem);
+  --font-family-base: "Libre Franklin", sans-serif;
+  --font-family-secondary: "Libre Franklin", sans-serif;
+  --font-family-tertiary: "Libre Franklin", sans-serif;
+  --font-family-fourth: "Libre Franklin", sans-serif;
+  --font-family-bold: "Libre Franklin", sans-serif;
+  --nav-font-family: "Libre Franklin", sans-serif;
+  --nav-font-weight: 400;
+  --category-font-family: "Libre Franklin", sans-serif;
+  --category-font-weight: 700;
+  --headings-font-family: "Libre Franklin", sans-serif;
+  --headings-font-weight: 700;
+  --headings-color: #231f20;
+  --section-title-font-family: "Libre Franklin", sans-serif;
+  --section-title-font-weight: 500;
+  --section-title-color: #000000;
+  --section-title-font-size: clamp(1.125rem, 0.7vw + 1rem, 1.625rem);
+  --section-title-text-align: left;
+  --entry-font-family: "Libre Franklin", sans-serif;
+  --excerpt-font-family: "Libre Franklin", sans-serif;
+  --excerpt-font-weight: 400;
+  --article-item-title-font-family: "Libre Franklin", sans-serif;
+  --article-item-title-font-weight: 700;
+  --single-title-font-family: "Libre Franklin", sans-serif;
+  --single-title-font-weight: 700;
+  --single-title-color: #2a2e2f;
+  --single-elements-color: #e71f3d;
+  --page-title-font-size: clamp(1.875rem, 1.8vw + 1.5rem, 3.1875rem);
+  --page-title-font-family: "Libre Franklin", sans-serif;
+  --page-title-font-weight: 300;
+  --page-title-color: #2a2e2f;
+  --single-title-font-size: clamp(2rem, 1.4vw + 1.7rem, 3rem);
+  --excerpt-font-size: 1rem;
+  --excerpt-color: #231f20;
+  --entry-color: #231f20;
+  --footer-nav-color: #fff;
+  --footer-nav-font-size: clamp(0.625rem, 0.2vw + 0.6rem, 0.75rem);
+  --footer-background: #2a2e2f;
+  --footer-color: #fff;
+  --entry-font-size: clamp(1.125rem, 0.3vw + 1.1rem, 1.375rem);
+  --article-item-title-font-size: fluid(16px, 20px);
+  --section-padding: 1rem 0;
+  --section-margin: 1rem 0;
+  --social-icons-font-size: 1rem;
+  --social-icons-justify-content: space-evenly;
+  --social-icons-gap: 1rem;
+  --sticky-header-margin: 5.3125rem;
+  --wrapper-margin-top: 0;
+  --header-background: #fff;
+  --header-padding-x: 0;
+  --header-padding-y: 0.5rem;
+  --borders-color: #59beb9;
+  --widgets-dark-color: #f0efed;
+  --social-icons-color: #000;
+  --font-family-nav: "Libre Franklin", sans-serif;
+  --font-family-nav-weight: 400;
+  --font-family-category: "Libre Franklin", sans-serif;
+  --font-family-category-weight: 700;
+  --font-family-headings: "Libre Franklin", sans-serif;
+  --font-family-headings-weight: 700;
+  --color-headings: #231f20;
+  --font-family-section-title: "Libre Franklin", sans-serif;
+  --font-family-section-title-weight: 500;
+  --color-section-headings: #231f20;
+  --font-family-text: "Libre Franklin", sans-serif;
+  --font-family-excerpt: "Libre Franklin", sans-serif;
+  --font-family-excerpt-weight: 400;
+  --font-family-article-title: "Libre Franklin", sans-serif;
+  --font-family-article-title-weight: 700;
+  --font-family-single-title: "Libre Franklin", sans-serif;
+  --font-familiy-ads-text: "Libre Franklin", sans-serif;
+  --page-title-size: clamp(3rem, 9.4vw + 1.1rem, 7rem);
+  --article-title-size: clamp(1.625rem, 1.3vw + 1.4rem, 2.25rem);
+  --article-excerpt-size: clamp(1rem, 0.4vw + 0.9rem, 1.3rem);
+  --color-excerpt: #231f20;
+  --color-entry-txt: #231f20;
+  --footer-nav-color: #fff;
+  --footer-nav-size: clamp(0.8875rem, 0.7vw + 0.6rem, 1.0625rem);
+  --footer-bg: #2a2e2f;
+  --section-title-size: 1.25rem;
+  --font-size-txt: 1rem;
+  --sections-margins: 1rem 0;
+  --background-article: transparent;
+  --social-icons-fsize: 1rem;
+  --social-icons-justify: space-evenly;
+  --bs-tertiary: #000;
+}
+
+/* libre-franklin-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/libre-franklin-v14-latin-100.8307598a.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/libre-franklin-v14-latin-300.aadff109.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/libre-franklin-v14-latin-regular.3721d6d1.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/libre-franklin-v14-latin-500.82614c8d.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/libre-franklin-v14-latin-700.e863b028.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/libre-franklin-v14-latin-800.0ff141cb.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/libre-franklin-v14-latin-900.b4698e96.woff2) format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.wp-block-post-title {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: clamp(1.125rem, 2.2vw + 0.7rem, 2.75rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.75rem;
+  margin: 1rem auto;
+}
+
+.wp-block-post-content {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  color: #000000;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+/*# sourceMappingURL=editor.css.map*/

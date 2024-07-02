@@ -1,0 +1,27 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wa-blocks-core-wa-gallery {
+  --wa-gallery-max-width: 100%;
+  padding: 0 1rem;
+
+  .wp-block-wa-blocks-core-wa-gallery__caption {
+    text-align: center;
+  }
+
+  .wp-block-wa-blocks-core-wa-gallery__btn {
+    margin: 0 0 2rem;
+  }
+  .swiper {
+    max-width: var(--wa-gallery-max-width, 100%);
+  }
+
+  .wp-block-wa-blocks-core-wa-gallery__grid {
+    .wp-block-wa-blocks-core-wa-gallery__caption {
+      grid-column: 1/-1;
+    }
+  }
+}

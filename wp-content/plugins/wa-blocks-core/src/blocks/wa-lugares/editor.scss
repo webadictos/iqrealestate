@@ -1,0 +1,23 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wa-blocks-core-wa-lugares {
+  border: 1px solid #191a1c;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .wp-block-wa-blocks-core-wa-lugares__item {
+    width: 100%;
+  }
+
+  .components-button {
+    border: 1px solid #191a1c;
+    background-color: #191a1c;
+    color: #fff;
+  }
+}

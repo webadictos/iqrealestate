@@ -1,0 +1,27 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-fw-festival-2024-fwf-logos {
+  margin: 1.5rem 0;
+
+  .wp-block-fw-festival-2024-fwf-logos__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .wp-block-fw-festival-2024-fwf-logos__img {
+      max-width: 100%;
+    }
+  }
+}

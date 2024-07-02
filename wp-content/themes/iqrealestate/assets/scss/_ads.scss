@@ -1,0 +1,45 @@
+.ad-container:not(.ad-interstitial) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // margin: 1rem auto;
+  // //background-color: #fff;
+  // padding-bottom: 1rem;
+  // &.ad-interstitial {
+  //   margin: 0;
+  //   background-color: transparent;
+  // }
+  // &:not(.ad-interstitial)::before {
+  //   content: 'Publicidad';
+  //   text-align: center;
+  //   display: block;
+  //   font-size: 0.75rem;
+  //   padding: 0.2rem 0;
+  // }
+  .ad-superbanner,
+  .ad-billboardboxmobile,
+  .ad-billboard {
+    max-width: 970px;
+    min-height: 50px;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      min-height: 90px;
+    }
+  }
+  .ad-boxbanner {
+    width: 300px;
+  }
+  &.ad-inread {
+    margin: 4rem 0;
+  }
+}
+.ad-interstitial {
+  height: 1px;
+}
+.ad-fixed-top {
+  background-color: #f2f2f2;
+  z-index: 1021;
+  padding: 0.75rem 0;
+  transition: all 0.3s;
+}

@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wa-blocks-core-wa-internal-link {
+  // background-color: #21759b;
+  // color: #fff;
+  // padding: 2px;
+  &.wa-internal-link {
+    display: inline-block;
+    text-align: left;
+
+    &::before {
+      content: var(--wa-internal-link-txt, 'Relacionado:');
+      margin-right: 0.25rem;
+      text-align: left;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      letter-spacing: 0.0625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-underline-offset: 0.25rem;
+    }
+    a {
+      text-decoration: underline;
+      text-align: left;
+    }
+  }
+}

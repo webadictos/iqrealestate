@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../utils/theme_functions';
+
+.wp-block-wa-blocks-core-wa-accordion-item {
+  --wa-accordion-heading-color: #2a2e2f;
+  border-bottom: rem(0.5px) solid #2a2e2f;
+  //   padding-bottom: rem(26px);
+  .accordion {
+    .accordion-header {
+      cursor: pointer;
+      background-color: #f1f1f1;
+      padding: 2rem 0;
+      padding-left: 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: var(--wa-accordion-heading-color);
+      font-size: fluid(12px, 16px);
+      &::after {
+        content: '';
+        background-color: #2a2e2f;
+        mask-image: url('./assets/accordion-open.svg');
+        width: rem(16px);
+        height: rem(16px);
+        display: block;
+        margin-left: auto;
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        mask-position: center;
+        margin-right: 1rem;
+      }
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+
+    &.is-open {
+      .accordion-header {
+        &::after {
+          mask-image: url('./assets/accordion-close.svg');
+        }
+      }
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+      padding: 0 1rem; /* Inicialmente sin padding */
+      > * {
+        font-size: rem(13px);
+      }
+    }
+
+    &.is-open .accordion-content {
+      max-height: 1000px; /* Un valor suficientemente grande para contener el contenido */
+      padding: 0 1rem 1rem;
+    }
+  }
+}

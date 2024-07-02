@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-fw-festival-2024-fwf-program {
+  .wp-block-fw-festival-2024-fwf-program__msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted red;
+    text-align: center;
+  }
+
+  .wp-block-fw-festival-2024-fwf-program__day-container {
+    .wp-block-fw-festival-2024-fwf-program__day-heading {
+      color: var(--wp--preset--color--fw-pink);
+      border-bottom: rem(2px) solid var(--wp--preset--color--fw-pink);
+      font-size: rem(42px);
+      text-transform: uppercase;
+      font-family: 'MB Empire Heavy W01 Heavy', sans-serif;
+    }
+    .wp-block-fw-festival-2024-fwf-program__event-heading {
+      color: var(--wp--preset--color--fw-pink);
+      border-bottom: rem(2px) solid var(--wp--preset--color--fw-pink);
+      font-size: rem(32px);
+      text-transform: uppercase;
+    }
+
+    .wp-block-fw-festival-2024-fwf-program__activity-schedule {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr auto;
+      align-items: center;
+      border-bottom: rem(2px) solid var(--wp--preset--color--fw-dark-grey);
+      font-size: rem(22px);
+    }
+  }
+}

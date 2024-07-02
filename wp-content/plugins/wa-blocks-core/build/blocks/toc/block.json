@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wa-blocks-core/toc",
+  "version": "0.1.0",
+  "title": "T+L - Tabla de contenidos",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Inserta una tabla de contenidos, basado en los encabezados h2 del contenido.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "toc",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wa-blocks-core-wa-list-items {
+  //   background-color: #21759b;
+  //   color: #fff;
+  //   padding: 2px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  .wa-blocks-core-wa-list-items__item-counter {
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: var(--font-family-base, Roboto, Tahoma, sans-serif);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-underline-offset: 0.125rem;
+    width: 2.75rem;
+    .wa-blocks-core-wa-list-items__item-counter--number {
+      font-family: var(
+        --font-family-headings,
+        Cardillac,
+        Baskerville,
+        Times,
+        serif
+      );
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-underline-offset: 0.4375rem;
+      font-weight: 400;
+    }
+
+    .wa-blocks-core-wa-list-items__item-counter--total {
+      display: flex;
+      gap: 0.2rem;
+      &::before {
+        content: 'de ';
+      }
+    }
+  }
+  h2.wa-blocks-core-wa-list-items__item-title {
+    margin: 0;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wa-blocks-core/wa-lugares",
+  "version": "0.1.0",
+  "title": "Lugares",
+  "category": "widgets",
+  "icon": "store",
+  "description": "Lugares con geolocalización.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "wa-lugares",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

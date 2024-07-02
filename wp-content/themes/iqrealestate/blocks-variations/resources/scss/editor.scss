@@ -1,0 +1,262 @@
+@use '~@wordpress/base-styles/variables';
+$ll-font-path: '../../../assets/webfonts/' !default;
+
+@import '../../../assets/scss/theme_functions';
+@import '../../../assets/scss/theme-vars';
+@import '../../../assets/scss/fonts/libre-franklin';
+
+// @import './mb-empire';
+
+// .block-editor-block-list__layout.is-root-container figure:not(.swiper-slide),
+// .editor-styles-wrapper
+//   .block-editor-block-list__layout.is-root-container
+//   figure:not(.swiper-slide) {
+//   margin-left: auto !important;
+//   margin-right: auto !important;
+// }
+
+// .has-fdp-blue-color {
+//   color: var(--wp--preset--color--fdp-blue) !important;
+// }
+// .has-fdp-blue-background-color {
+//   background-color: var(--wp--preset--color--fdp-blue) !important;
+// }
+// .has-fdp-red-color {
+//   color: var(--wp--preset--color--fdp-red) !important;
+// }
+// .has-fdp-red-background-color {
+//   background-color: var(--wp--preset--color--fdp-red) !important;
+// }
+// .has-fdp-yellow-color {
+//   color: var(--wp--preset--color--fdp-yellow) !important;
+// }
+// .has-fdp-yellow-background-color {
+//   background-color: var(--wp--preset--color--fdp-yellow) !important;
+// }
+
+// .has-fdp-dark-grey-color {
+//   color: var(--wp--preset--color--fdp-dark-grey) !important;
+// }
+// .has-fdp-dark-grey-background-color {
+//   background-color: var(--wp--preset--color--fdp-dark-grey) !important;
+// }
+
+// .has-fdp-primary-color {
+//   color: var(--wp--preset--color--fdp-primary) !important;
+// }
+// .has-fdp-primary-background-color {
+//   background-color: var(--wp--preset--color--fdp-primary) !important;
+// }
+// .has-fdp-rosa-color {
+//   color: var(--wp--preset--color--fdp-rosa) !important;
+// }
+// .has-fdp-rosa-background-color {
+//   background-color: var(--wp--preset--color--fdp-rosa) !important;
+// }
+
+// .editor-styles-wrapper
+//   .block-editor-block-list__layout.is-root-container
+//   hr.is-style-fwf-hr-uno {
+//   background-image: url('../images/fw-separador-uno.svg');
+//   height: rem(160px);
+//   width: 100% !important;
+//   background-size: 100%;
+//   background-repeat: repeat-x;
+//   border: 0;
+//   display: block;
+//   background-position: center;
+//   margin-block-start: 0;
+//   margin-block-end: 0;
+// }
+// .editor-styles-wrapper
+//   .block-editor-block-list__layout.is-root-container
+//   hr.is-style-fwf-hr-dos {
+//   background-image: url('../images/fw-separador-dos.svg');
+//   height: rem(160px);
+//   width: 100% !important;
+//   background-size: 100%;
+//   background-repeat: repeat-x;
+//   border: 0;
+//   display: block;
+//   background-position: center;
+//   margin-block-start: 0;
+//   margin-block-end: 0;
+// }
+
+// /**
+// * wp-block-post-title
+// */
+.wp-block-post-title {
+  font-family: $headings-font-family;
+  font-size: fluid(18px, 44px);
+  font-style: normal;
+  font-weight: $headings-font-weight;
+  line-height: 5.75rem;
+  margin: 1rem auto;
+}
+
+// /**
+// * wp-block-post-content
+// */
+
+.wp-block-post-content {
+  font-family: $font-family-base;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  color: #000000;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+
+// /**
+// * wp-block-heading
+// */
+// .wp-block-heading {
+//   font-family: 'MB Empire Heavy W01 Heavy', sans-serif;
+//   margin: 1rem 0;
+//   font-weight: 700 !important;
+//   text-transform: uppercase;
+// }
+// /**
+// h2 {
+//   font-size: fluid(24px, 28px);
+//   // line-height: fluid(40px, 50px);
+// }
+// h3 {
+//   font-size: fluid(22px, 26px);
+//   // line-height: fluid(30px, 40px);
+// }
+
+// h4 {
+//   font-size: fluid(21px, 24px);
+//   // line-height: fluid(28px, 34px);
+// }
+// h5 {
+//   font-size: rem(20px);
+// }
+// */
+// html :where(.editor-styles-wrapper) .wp-block-heading.h2 {
+//   font-size: fluid(21px, 42px);
+// }
+// html :where(.editor-styles-wrapper) .wp-block-heading.h3 {
+//   font-size: fluid(15px, 25px);
+// }
+// html :where(.editor-styles-wrapper) .wp-block-heading.h4 {
+//   font-size: fluid(14px, 20px);
+// }
+// html :where(.editor-styles-wrapper) .wp-block-heading.h5 {
+//   font-size: rem(13px);
+// }
+// html :where(.editor-styles-wrapper) .wp-block-heading.h6 {
+//   font-size: rem(12px);
+// }
+// /**
+// * CORE/QUOTE
+// */
+
+// html :where(.wp-block)[data-align='wide'] {
+//   .wp-block-quote {
+//     max-width: 1100px;
+//   }
+// }
+// .editor-styles-wrapper {
+//   background-color: #f5f0e0;
+// }
+
+// .editor-styles-wrapper .block-editor-block-list__layout.is-root-container mark {
+//   padding: 0 !important;
+// }
+
+// .wp-block-list-item {
+//   margin: 0.5rem 0;
+//   line-height: 1.2;
+// }
+
+// .wp-block-paragraph {
+//   line-height: 1.2;
+// }
+
+// .mb-0 {
+//   margin-bottom: 0 !important;
+// }
+// .mt-0 {
+//   margin-top: 0 !important;
+// }
+
+// .fwf-hero {
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   &::before {
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: rem(32px);
+//     background-image: url('../images/fw-separador-uno.svg');
+//     background-repeat: repeat-x;
+//     background-size: 100%;
+//     position: absolute;
+//     background-position: top center;
+
+//     left: 0;
+//     top: 0;
+//     z-index: 2;
+
+//     @media screen and (min-width: 768px) {
+//       height: rem(64px);
+//     }
+
+//     @media screen and (min-width: 992px) {
+//       height: rem(86px);
+//     }
+//     @media screen and (min-width: 1200px) {
+//       height: rem(120px);
+//     }
+//   }
+//   &::after {
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: rem(32px);
+//     background-image: url('../images/fw-separador-dos.svg');
+//     background-repeat: repeat-x;
+//     background-size: 100%;
+//     background-position: bottom center;
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     z-index: 2;
+//     @media screen and (min-width: 768px) {
+//       height: rem(64px);
+//     }
+
+//     @media screen and (min-width: 992px) {
+//       height: rem(86px);
+//     }
+//     @media screen and (min-width: 1200px) {
+//       height: rem(120px);
+//     }
+//   }
+
+//   .fwf-logo {
+//     max-width: rem(310px);
+//     height: auto;
+//     width: 100%;
+
+//     @media screen and (min-width: 992px) {
+//       max-width: rem(400px);
+//     }
+//     @media screen and (min-width: 1200px) {
+//       max-width: rem(500px);
+//     }
+//   }
+// }

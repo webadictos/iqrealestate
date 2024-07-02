@@ -1,0 +1,84 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import '../../utils/theme_functions';
+
+.wp-block-fw-festival-2024-fwf-headings {
+  background-color: var(--wp--preset--color--fw-pink);
+  color: var(--wp--preset--color--fw-light);
+  position: relative;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 992px) {
+    padding: 4rem 0;
+  }
+  &.is-style-fwf-heading-bnf {
+    @media screen and (min-width: 992px) {
+      padding: 3rem 0;
+    }
+
+    .wp-block-fw-festival-2024-fwf__heading {
+      display: flex;
+      align-items: center;
+      &::after {
+        content: '';
+        background-image: url('./assets/best-new-chefs.svg');
+        width: rem(138px);
+        height: rem(107px);
+        margin-left: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 0;
+
+        @media screen and (min-width: 992px) {
+          margin-right: 350px;
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('./assets/fwf-heading.svg');
+    background-repeat: no-repeat;
+    content: '';
+    height: rem(236px);
+    background-size: cover;
+    width: 100%;
+    display: block;
+
+    @media screen and (min-width: 992px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      max-width: rem(350px);
+    }
+  }
+
+  .wp-block-fw-festival-2024-fwf__heading-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @media screen and (min-width: 992px) {
+      padding: 0;
+    }
+    .wp-block-fw-festival-2024-fwf__heading {
+      font-size: fluid(22px, 65px);
+      color: currentColor;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      @media screen and (min-width: 992px) {
+        text-align: left;
+      }
+    }
+  }
+}

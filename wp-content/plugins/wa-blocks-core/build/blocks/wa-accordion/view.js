@@ -1,0 +1,1 @@
+console.log("Hello World! (from wa-blocks-core-wa-accordion block)");

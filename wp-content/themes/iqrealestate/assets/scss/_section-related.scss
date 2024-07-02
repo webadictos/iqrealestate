@@ -1,0 +1,15 @@
+.section-related {
+  @include fondoBicolor(#ffffff, rgba(0, 0, 0, 0.05), to bottom, 10%);
+  @extend .wide-container;
+  --section-padding: 0 0 1rem;
+  margin: 0;
+  .container {
+    max-width: 80.25rem;
+  }
+  .section__title-container {
+    .section__title {
+      text-align: left;
+      --section-title-font-size: #{rem(28px)};
+    }
+  }
+}

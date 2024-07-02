@@ -1,0 +1,53 @@
+// @font-face {
+//   font-display: swap;
+//   font-family: 'Cardillac';
+//   src: local('Cardillac Extra Bold'), local('Cardillac-Extra-Bold'),
+//     url('#{$ll-font-path}/cardillac/Cardillac-ExtraBold.woff2') format('woff2'),
+//     url('#{$ll-font-path}/cardillac/Cardillac-ExtraBold.woff') format('woff'),
+//     url('#{$ll-font-path}/cardillac/Cardillac-ExtraBold.ttf') format('truetype');
+//   font-weight: 800;
+//   font-style: normal;
+// }
+@font-face {
+  font-display: swap;
+  font-family: 'Cardillac';
+  src: local('Cardillac Extra Bold'), local('Cardillac-Extra-Bold'),
+    url('#{$ll-font-path}/cardillac/cardillac-700.woff2') format('woff2'),
+    url('#{$ll-font-path}/cardillac/cardillac-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Cardillac';
+  src: local('Cardillac'), local('Cardillac'),
+    url('#{$ll-font-path}/cardillac/cardillac.woff2') format('woff2'),
+    url('#{$ll-font-path}/cardillac/cardillac.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-display: swap;
+//   font-family: 'Cardillac';
+//   src: local('Cardillac Extra Bold Italic'),
+//     local('Cardillac-Extra-Bold-Italic'),
+//     url('#{$ll-font-path}/cardillac/Cardillac-ExtraBoldItalic.woff2')
+//       format('woff2'),
+//     url('#{$ll-font-path}/cardillac/Cardillac-ExtraBoldItalic.woff')
+//       format('woff'),
+//     url('#{$ll-font-path}/cardillac/Cardillac-ExtraBoldItalic.ttf')
+//       format('truetype');
+//   font-weight: 800;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-display: swap;
+//   font-family: 'CardillacDos';
+//   src: local('Cardillac Extra Bold'), local('Cardillac-Extra-Bold'),
+//     url('#{$ll-font-path}/cardillac/cardillac-700.woff2') format('woff2');
+//   font-weight: 700;
+//   font-style: normal;
+// }

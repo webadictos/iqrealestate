@@ -1,0 +1,86 @@
+.section--hero-article {
+  --section-padding: 0;
+  --section-padding-lg: 0;
+  --section-margin: 0;
+}
+.article-item--hero {
+  --article-item-cat-color: rgba(0, 0, 0, 0.65);
+  --article-item-author-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    display: grid;
+  }
+  .article-item__thumbnail {
+    grid-area: 1/1/2/-1;
+    --article-item-thumbnail-aspect-ratio: 16/9;
+    @include media-breakpoint-up(lg) {
+      max-height: rem(496px);
+    }
+  }
+  .article-item__header {
+    grid-area: 1/1/2/-1;
+
+    --article-item-title-font-size: #{fluid(28px, 36px)};
+
+    padding: 0;
+
+    justify-content: center;
+    @include media-breakpoint-up(lg) {
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      pointer-events: none;
+    }
+
+    .article-item__meta {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      background: #fff;
+      // box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.15);
+
+      padding: 1.25rem;
+      box-shadow: none;
+      border: 1px solid #000;
+      outline: 1px solid #000;
+      outline-offset: -6px;
+
+      @include media-breakpoint-up(lg) {
+        max-width: rem(385px); //22.75rem;
+        pointer-events: auto;
+        z-index: 1;
+      }
+      .article-item__cat {
+        font-size: rem(14px);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: rem(1px);
+        line-height: rem(20px);
+      }
+      .article-item__title {
+        margin: 0.5rem 0;
+        // line-height: fluid(28px, 44px);
+        font-family: var(--font-family-fourth);
+        -webkit-text-stroke: var(--zebra-webkit-text-stroke, inherit);
+        -webkit-font-smoothing: var(--zebra-webkit-font-smoothing, inherit);
+        letter-spacing: var(--zebra-letter-spacing, inherit);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.3125rem;
+
+        a {
+          --max-lines: 4;
+        }
+      }
+      .article-item__excerpt {
+        --excerpt-font-size: #{rem(16px)};
+        --excerpt-color: rgba(0, 0, 0, 0.95);
+        --max-lines: 4;
+        margin-bottom: 0.5rem;
+      }
+      .article-item_author {
+        font-size: rem(14px);
+      }
+    }
+  }
+}

@@ -1,0 +1,519 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-wa-blocks-core-wa-rotate {
+  .wa-rotate-text__main {
+    font-size: fluid(16px, 37px);
+    font-weight: 100;
+    max-width: 100%;
+    @media screen and (min-width: 992px) {
+      max-width: var(--wa-rotate-container-max-width, 100%);
+    }
+
+    > span {
+      display: inline-block;
+      text-align: left;
+      height: rem(24px);
+      line-height: rem(24px);
+      overflow: hidden;
+      color: #fff;
+
+      @media screen and (min-width: 992px) {
+        height: rem(40px);
+        line-height: rem(40px);
+      }
+    }
+
+    .wa-rotate-text__text {
+      position: relative;
+      display: inline-block;
+      animation: var(--wa-rotate-text-animation) ease-in-out 8s infinite;
+      span {
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+        padding: 0 rem(10px);
+      }
+    }
+
+    .wa-rotate-text__suffix {
+      overflow: inherit;
+    }
+  }
+
+  .num-words-2 {
+    --wa-rotate-text-animation: text-animation-2;
+  }
+
+  .num-words-3 {
+    --wa-rotate-text-animation: text-animation-3;
+  }
+
+  .num-words-4 {
+    --wa-rotate-text-animation: text-animation-4;
+  }
+
+  .num-words-5 {
+    --wa-rotate-text-animation: text-animation-5;
+  }
+
+  .num-words-6 {
+    --wa-rotate-text-animation: text-animation-6;
+  }
+
+  .num-words-7 {
+    --wa-rotate-text-animation: text-animation-7;
+  }
+
+  .num-words-8 {
+    --wa-rotate-text-animation: text-animation-8;
+  }
+
+  .num-words-9 {
+    --wa-rotate-text-animation: text-animation-9;
+  }
+
+  .num-words-10 {
+    --wa-rotate-text-animation: text-animation-10;
+  }
+}
+
+@keyframes text-animation-2 {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: rem(-40px);
+  }
+}
+
+@keyframes text-animation-3 {
+  0%,
+  100% {
+    top: 0;
+  }
+  33.33% {
+    top: rem(-40px);
+  }
+  66.66% {
+    top: rem(-80px);
+  }
+}
+
+@keyframes text-animation-4 {
+  0%,
+  100% {
+    top: 0;
+  }
+  25% {
+    top: rem(-40px);
+  }
+  50% {
+    top: rem(-80px);
+  }
+  75% {
+    top: rem(-120px);
+  }
+}
+
+@keyframes text-animation-5 {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: rem(-40px);
+  }
+  40% {
+    top: rem(-80px);
+  }
+  60% {
+    top: rem(-120px);
+  }
+  80% {
+    top: rem(-160px);
+  }
+}
+
+@keyframes text-animation-6 {
+  0%,
+  100% {
+    top: 0;
+  }
+  16.66% {
+    top: rem(-40px);
+  }
+  33.32% {
+    top: rem(-80px);
+  }
+  50% {
+    top: rem(-120px);
+  }
+  66.66% {
+    top: rem(-160px);
+  }
+  83.32% {
+    top: rem(-200px);
+  }
+}
+
+@keyframes text-animation-7 {
+  0%,
+  100% {
+    top: 0;
+  }
+  14.28% {
+    top: rem(-40px);
+  }
+  28.56% {
+    top: rem(-80px);
+  }
+  42.84% {
+    top: rem(-120px);
+  }
+  57.14% {
+    top: rem(-160px);
+  }
+  71.42% {
+    top: rem(-200px);
+  }
+  85.7% {
+    top: rem(-240px);
+  }
+}
+
+@keyframes text-animation-8 {
+  0%,
+  100% {
+    top: 0;
+  }
+  12.5% {
+    top: rem(-40px);
+  }
+  25% {
+    top: rem(-80px);
+  }
+  37.5% {
+    top: rem(-120px);
+  }
+  50% {
+    top: rem(-160px);
+  }
+  62.5% {
+    top: rem(-200px);
+  }
+  75% {
+    top: rem(-240px);
+  }
+  87.5% {
+    top: rem(-280px);
+  }
+}
+
+@keyframes text-animation-9 {
+  0%,
+  100% {
+    top: 0;
+  }
+  11.11% {
+    top: rem(-40px);
+  }
+  22.22% {
+    top: rem(-80px);
+  }
+  33.32% {
+    top: rem(-120px);
+  }
+  44.43% {
+    top: rem(-160px);
+  }
+  55.55% {
+    top: rem(-200px);
+  }
+  66.66% {
+    top: rem(-240px);
+  }
+  77.76% {
+    top: rem(-280px);
+  }
+  88.87% {
+    top: rem(-320px);
+  }
+}
+
+@keyframes text-animation-10 {
+  0%,
+  100% {
+    top: 0;
+  }
+  10% {
+    top: rem(-40px);
+  }
+  20% {
+    top: rem(-80px);
+  }
+  30% {
+    top: rem(-120px);
+  }
+  40% {
+    top: rem(-160px);
+  }
+  50% {
+    top: rem(-200px);
+  }
+  60% {
+    top: rem(-240px);
+  }
+  70% {
+    top: rem(-280px);
+  }
+  80% {
+    top: rem(-320px);
+  }
+  90% {
+    top: rem(-360px);
+  }
+}
+
+// @keyframes text-animation-2 {
+//     0%, 50%, 100% { top: 0; }
+//     25%, 75% { top: -40px; }
+// }
+
+// @keyframes text-animation-3 {
+//     0%, 33.33%, 100% { top: 0; }
+//     16.66%, 49.99% { top: -40px; }
+//     66.66%, 83.32% { top: -80px; }
+// }
+
+// @keyframes text-animation-4 {
+//     0%, 25%, 100% { top: 0; }
+//     12.5%, 37.5% { top: -40px; }
+//     50%, 75% { top: -80px; }
+//     87.5% { top: -120px; }
+// }
+
+// @keyframes text-animation-5 {
+//     0%, 20%, 100% { top: 0; }
+//     10%, 30% { top: -40px; }
+//     40%, 50% { top: -80px; }
+//     60%, 70% { top: -120px; }
+//     80%, 90% { top: -160px; }
+// }
+
+// @keyframes text-animation-6 {
+//     0%, 16.66%, 100% { top: 0; }
+//     8.33%, 24.99% { top: -40px; }
+//     33.32%, 41.65% { top: -80px; }
+//     50%, 58.32% { top: -120px; }
+//     66.66%, 74.99% { top: -160px; }
+//     83.32%, 91.65% { top: -200px; }
+// }
+
+// @keyframes text-animation-7 {
+//     0%, 14.28%, 100% { top: 0; }
+//     7.14%, 21.42% { top: -40px; }
+//     28.56%, 35.7% { top: -80px; }
+//     42.84%, 50% { top: -120px; }
+//     57.14%, 64.28% { top: -160px; }
+//     71.42%, 78.56% { top: -200px; }
+//     85.7%, 92.84% { top: -240px; }
+// }
+
+// @keyframes text-animation-8 {
+//     0%, 12.5%, 100% { top: 0; }
+//     6.25%, 18.75% { top: -40px; }
+//     25%, 31.25% { top: -80px; }
+//     37.5%, 43.75% { top: -120px; }
+//     50%, 56.25% { top: -160px; }
+//     62.5%, 68.75% { top: -200px; }
+//     75%, 81.25% { top: -240px; }
+//     87.5%, 93.75% { top: -280px; }
+// }
+
+// @keyframes text-animation-9 {
+//     0%, 11.11%, 100% { top: 0; }
+//     5.55%, 16.66% { top: -40px; }
+//     22.22%, 27.77% { top: -80px; }
+//     33.32%, 38.88% { top: -120px; }
+//     44.43%, 50% { top: -160px; }
+//     55.55%, 61.1% { top: -200px; }
+//     66.66%, 72.21% { top: -240px; }
+//     77.76%, 83.32% { top: -280px; }
+//     88.87%, 94.43% { top: -320px; }
+// }
+
+// @keyframes text-animation-10 {
+//     0%, 10%, 100% { top: 0; }
+//     5%, 15% { top: -40px; }
+//     20%, 30% { top: -80px; }
+//     35%, 45% { top: -120px; }
+//     50%, 60% { top: -160px; }
+//     65%, 75% { top: -200px; }
+//     80%, 90% { top: -240px; }
+//     85%, 95% { top: -280px; }
+//     90%, 100% { top: -320px; }
+// }
+
+// .wp-block-wa-blocks-core-wa-rotate {
+
+// 	.text-slide {
+// 		text-align: center;
+
+// 		> div {
+// 			display: inline-block;
+// 			text-align: left;
+// 			height: 40px;
+// 			line-height: 40px;
+// 			overflow: hidden;
+// 			font-size: 30px;
+// 		  }
+// 	  }
+
+// 	  .text {
+// 		position: relative;
+// 		animation: text-animation ease 8s infinite;
+
+// 		span {
+// 			display: block;
+// 			color: #fff;
+// 			padding: 0 10px;
+// 		  }
+
+// 		span:nth-child(1) {
+// 			background-color: #ff4258;
+// 		  }
+
+// 		  span:nth-child(2) {
+// 			background-color: #72ff7a;
+// 		  }
+
+// 		  span:nth-child(3) {
+// 			background-color: #f0ca4d;
+// 		  }
+
+// 		  span:nth-child(4) {
+// 			background-color: #9759fa;
+// 		  }
+
+// 		  span:nth-child(5) {
+// 			background-color: #03c7fd;
+// 		  }
+// 	  }
+
+// 	  @keyframes text-animation {
+// 		0% {
+// 		  top: 0;
+// 		}
+
+// 		10% {
+// 		  top: 0;
+// 		}
+
+// 		20% {
+// 		  top: -40px;
+// 		}
+
+// 		30% {
+// 		  top: -40px;
+// 		}
+
+// 		40% {
+// 		  top: -80px;
+// 		}
+
+// 		50% {
+// 		  top: -80px;
+// 		}
+
+// 		60% {
+// 		  top: -120px;
+// 		}
+
+// 		70% {
+// 		  top: -120px;
+// 		}
+
+// 		80% {
+// 		  top: -160px;
+// 		}
+
+// 		90% {
+// 		  top: -160px;
+// 		}
+
+// 		100% {
+// 		  top: 0px;
+// 		}
+// 	  }
+
+// 	.wa-rotate__sentence{
+// 		margin: 0;
+// 		text-align: left;
+// 		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+// 			span{
+// 				color: #444;
+// 				font-size: 200%;
+// 				font-weight: normal;
+
+// 		}
+
+// 		.wa-rotate__words{
+// 			display: inline-block;
+// 			text-indent: 10px;
+// 			position: relative; /* Ensure the words stack correctly */
+// 			height: 2em; /* Adjust height according to the line-height of the words */
+
+// 			span{
+// 				position: absolute;
+// 				opacity: 0;
+// 				overflow: hidden;
+// 				color: #6b969d;
+// 				animation: rotateWord 18s linear infinite 0s;
+// 						}
+// 			span:nth-child(2) {
+
+// 				animation-delay: 3s;
+// 				color: #6b889d;
+// 			}
+// 			span:nth-child(3) {
+
+// 				animation-delay: 6s;
+// 				color: #6b739d;
+// 			}
+// 			span:nth-child(4) {
+
+// 				animation-delay: 9s;
+// 				color: #7a6b9d;
+// 			}
+// 			span:nth-child(5) {
+
+// 				animation-delay: 12s;
+// 				color: #8d6b9d;
+// 			}
+// 			span:nth-child(6) {
+
+// 				animation-delay: 15s;
+// 				color: #9b6b9d;
+// 			}
+// 		}
+
+// 	}
+
+// 	@keyframes rotateWord {
+// 		0% { opacity: 0; }
+// 		2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+// 		5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+// 		17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+// 		20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+// 		80% { opacity: 0; }
+// 		100% { opacity: 0; }
+// 	}
+
+// }

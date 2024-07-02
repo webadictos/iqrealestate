@@ -1,0 +1,1 @@
+console.log("Hello World! (from fw-festival-2024-fwf-program block)");

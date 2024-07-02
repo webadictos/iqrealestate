@@ -1,0 +1,28 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-fw-festival-2024-fwf-contact {
+  border: 1px dotted #000;
+
+  .contact__button {
+    grid-column: 1/-1;
+    flex: 100%;
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .wp-block-fw-festival-2024-fwf-contact__item {
+    .wp-block-fw-festival-2024-fwf-contact__name {
+      font-size: 18px;
+      color: var(--wp--preset--color--fw-primary);
+    }
+    .wp-block-fw-festival-2024-fwf-contact__email {
+      font-size: 18px;
+      color: var(--wp--preset--color--fw-dark-grey);
+    }
+  }
+}

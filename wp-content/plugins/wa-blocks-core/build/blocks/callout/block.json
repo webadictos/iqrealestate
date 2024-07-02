@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "wa-blocks-core/callout",
+  "version": "0.1.1",
+  "title": "T+L - Callout",
+  "category": "widgets",
+  "icon": "admin-comments",
+  "description": "Inserta un recuadro resaltado con contenido dentro.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "callout",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

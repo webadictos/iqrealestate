@@ -1,0 +1,37 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-fw-festival-2024-fwf-logos {
+  margin-top: 3rem;
+
+  .wp-block-fw-festival-2024-fwf-logos__btn {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .wp-block-fw-festival-2024-fwf-logos__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    .wp-block-fw-festival-2024-fwf-logos__img {
+      max-width: 100%;
+    }
+  }
+}
+
+.wp-block-fw-festival-2024-fwf-logos__settings {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  img {
+    width: 50px;
+    height: auto;
+  }
+}

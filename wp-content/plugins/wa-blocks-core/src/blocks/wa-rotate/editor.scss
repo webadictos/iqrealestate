@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-wa-blocks-core-wa-rotate {
+}
+
+.rotate-text__control {
+  border: 1px solid #000;
+  margin: 0.5rem 0;
+  line-height: 2rem;
+  padding: 0.5rem;
+  display: block;
+}
+
+.rotate-text__label {
+  font-weight: bold;
+}

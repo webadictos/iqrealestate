@@ -1,0 +1,33 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wa-blocks-core-info-card {
+  .wp-block-wa-blocks-core-info-card__container {
+    .wp-block-wa-blocks-core-info-card__info {
+      list-style: none;
+      padding: 0 !important;
+      margin: 0;
+      li {
+        display: flex;
+        align-items: center;
+
+        .wp-block-wa-blocks-core-info-card__url {
+        }
+        @media screen and (min-width: 600px) {
+          .wp-block-wa-blocks-core-info-card__url,
+          .wp-block-wa-blocks-core-info-card__social {
+            max-width: 150px;
+
+            input {
+              max-width: 150px;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

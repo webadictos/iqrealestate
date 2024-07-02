@@ -1,0 +1,37 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-wa-blocks-core-wa-internal-link {
+  .block-editor-url-input__button {
+    display: flex;
+    width: 100%;
+  }
+  .block-editor-url-input__button-modal {
+    width: 100%;
+    @media (min-width: 600px) {
+      .block-editor-block-list__block
+        .block-editor-url-input
+        input[type='text'],
+      .block-editor-url-input input[type='text'],
+      .components-popover .block-editor-url-input input[type='text'] {
+        width: 100%;
+      }
+    }
+  }
+  .wp-block-wa-blocks-core-wa-internal-link__preview {
+    font-weight: 600;
+    display: inline-block;
+    &::before {
+      content: var(--wa-internal-link-txt, 'Relacionado:');
+      text-transform: uppercase;
+      margin-right: 0.3em;
+    }
+    .input-box {
+      text-decoration: underline;
+      display: inline-block;
+    }
+  }
+}

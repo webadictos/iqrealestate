@@ -1,0 +1,15 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-wa-blocks-core-wa-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Espacio entre cada acordeón */
+  background-color: #f1f2f2;
+  padding: rem(22px);
+}

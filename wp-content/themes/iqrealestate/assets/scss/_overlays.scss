@@ -1,0 +1,269 @@
+.hamburger-menu {
+  //--background-menu: url('../images/fondo-bushmills.jpg');
+  background: var(--hamburger-menu-background, var(--bs-primary));
+  color: var(--hamburger-menu-color, #fff);
+  border: 0;
+  z-index: 1050;
+
+  &.offcanvas {
+    --bs-offcanvas-width: 100%;
+    --bs-offcanvas-height: 100vh;
+  }
+
+  .offcanvas-header {
+    --bs-offcanvas-padding-y: 0.5rem;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 3rem;
+    // @include media-breakpoint-down(sm) {
+    //   flex-direction: column;
+    //   align-items: center;
+    //   padding: 0;
+    //   margin: 0;
+    // }
+  }
+
+  .offcanvas-body {
+    .search-component {
+      position: unset;
+      justify-content: flex-start;
+      .search-component__form {
+        width: 100%;
+        .search-component__label {
+          flex-basis: 100%;
+          margin-bottom: 0.5rem;
+        }
+        .search-component__input {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+
+  .hamburguer-menu__logo {
+    width: 100%;
+    height: auto;
+    max-width: rem(150px);
+    // transform: translateY(5px);
+    // order: 2;
+
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-top: 2rem;
+
+    // @include media-breakpoint-up(md) {
+    //   order: unset;
+    //   margin-left: 2rem;
+    //   margin-right: 0;
+    //   margin-top: 0;
+    // }
+
+    // @include media-breakpoint-up(lg) {
+    //   max-width: rem(355px);
+    // }
+  }
+
+  .close-hamburger {
+    --hamburger-menu-close-icon: transparent;
+    background: var(--hamburger-menu-close-icon);
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    margin-bottom: 1rem;
+    .icon-close {
+      fill: #fff;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .navbar {
+    @include media-breakpoint-up(lg) {
+      --bs-navbar-padding-x: 5rem;
+    }
+  }
+  .menu-hamburger__main-items {
+    .navbar-nav {
+      // max-width: 80%;
+      // margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      @include media-breakpoint-up(lg) {
+        align-items: flex-start;
+      }
+
+      > .menu-item {
+        // &:not(:last-child) {
+        //   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        // }
+      }
+    }
+    .nav-item {
+      width: 100%;
+    }
+    .menu-item + .menu-item {
+      margin-top: 0.5rem;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      // opacity: 0.18;
+      transition: all 1s;
+      font-family: var(--font-family-secondary);
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: var(--menu-hamburger-font-size, #{fluid(14px, 24px)});
+      font-weight: 100;
+      text-transform: uppercase;
+
+      &:hover,
+      &.active {
+        // opacity: 1;
+      }
+      &.dropdown-toggle:after {
+        margin-left: 0;
+        border: 0;
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5l7 7-7 7" fill="none" stroke="white" stroke-width="1"/></svg>');
+
+        // background-image: url('data:image/svg+xml,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" fill-rule="evenodd" clip-rule="evenodd" d="M10 6L8.59003 7.41L13.17 12L8.59003 16.59L10 18L16 12L10 6Z"/></svg>');
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: all 0.2s;
+      }
+
+      &.dropdown-toggle {
+        &.show::after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .dropdown-menu {
+      animation: slideDown 0.3s ease-in-out forwards;
+      transform-origin: top;
+      display: none;
+      width: 100%;
+      --bs-dropdown-color: #fff;
+      --bs-dropdown-bg: transparent;
+      --bs-dropdown-border-radius: 0;
+      --bs-dropdown-border-width: 0;
+      --bs-dropdown-link-color: #fff;
+      --bs-dropdown-link-hover-color: #fff;
+      --bs-dropdown-link-hover-bg: transparent;
+      --bs-dropdown-link-active-color: #fff;
+      --bs-dropdown-link-active-bg: #fff;
+
+      &.show {
+        display: block;
+      }
+      .dropdown-item {
+        font-family: var(--font-family-base);
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: unset;
+        font-size: var(--menu-hamburger-font-size, #{fluid(14px, 24px)});
+        text-align: center;
+        &.view-all-link {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .menu-menu-header-container {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: rem(2px) solid rgba(0, 0, 0, 0.95);
+    border-bottom: rem(2px) solid rgba(0, 0, 0, 0.95);
+
+    width: 100%;
+    .navbar-nav {
+      .suscribe-link {
+        display: none;
+      }
+    }
+  }
+
+  .hamburger-menu__heading {
+    color: var(--hamburger-menu-color, rgba(0, 0, 0, 0.95));
+    font-family: var(--font-family-secondary);
+    font-size: fluid(14px, 26px);
+    text-transform: unset;
+    margin: 0;
+  }
+  .hamburger-menu__social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    --bs-navbar-active-color: #fff;
+    --bs-nav-link-color: #fff;
+
+    .wa-social-profiles {
+      --social-icons-justify-content: center;
+      --social-icons-gap: 1rem;
+      --social-icons-font-size: 2rem;
+      --social-icons-color: #fff;
+      width: 100%;
+    }
+  }
+}
+
+.overlay-background {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: var(--wrapper-margin-top, 0);
+  width: 100%;
+  height: 100%;
+  background-color: var(--bs-secondary);
+  opacity: 0.74;
+  z-index: 100;
+  &.show {
+    display: block;
+  }
+}
+.loading-spinner {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1025;
+  &.show {
+    display: flex;
+  }
+  span {
+    font-size: rem(9px);
+  }
+}
+.spinner-animation {
+  border: rem(4px) solid rgba(0, 0, 0, 0.1);
+  width: rem(36px);
+  height: rem(36px);
+  border-radius: 50%;
+  border-left-color: var(--bs-secondary);
+
+  animation: myspin 1s ease infinite;
+}
+
+@keyframes myspin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

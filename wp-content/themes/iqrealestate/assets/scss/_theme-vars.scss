@@ -1,0 +1,186 @@
+@use 'sass:meta';
+//Bootstrap Vars
+$primary: #231f20;
+$secondary: #2a2e2f;
+$tertiary: #000;
+
+$borders-color: #59beb9;
+$font-weight-base: 300;
+$body-bg: #ffffff; // #f1f0ee;
+$body-color: #000;
+$popover-bg: #000;
+$popover-body-color: #fff;
+$color-gray: #808285;
+
+//Fonts Vars
+$font-family-base: 'Libre Franklin', sans-serif;
+$font-family-secondary: 'Libre Franklin', sans-serif;
+$font-family-tertiary: 'Libre Franklin', sans-serif;
+$font-family-fourth: 'Libre Franklin', sans-serif;
+$font-family-base-bold: 'Libre Franklin', sans-serif;
+
+$nav-font-family: 'Libre Franklin', sans-serif;
+$nav-font-weight: 400;
+
+$category-font-family: 'Libre Franklin', sans-serif;
+$category-font-weight: 700;
+
+$headings-font-family: 'Libre Franklin', sans-serif;
+$headings-font-weight: 700;
+
+$section-title-font-family: 'Libre Franklin', sans-serif;
+$section-title-font-weight: 500;
+$section-title-color: #000000;
+
+$article-item-title-font-family: 'Libre Franklin', sans-serif;
+$article-item-title-font-weight: 700;
+
+$single-title-font-family: 'Libre Franklin', sans-serif;
+$single-title-font-weight: 700;
+$single-title-color: #2a2e2f;
+$single-elements-color: #e71f3d;
+
+$page-title-font-family: 'Libre Franklin', sans-serif;
+$page-title-font-weight: 300;
+$page-title-color: #2a2e2f;
+
+$entry-font-family: 'Libre Franklin', sans-serif;
+
+$excerpt-font-family: $font-family-secondary; //'Bitstream Iowan Old Style BT', Palatino, serif;
+$excerpt-font-weight: 400;
+
+$ads-text-font-family: 'Libre Franklin', sans-serif;
+
+$fa-font-path: '../webfonts/fontawesome/';
+
+//Colors
+
+$headings-color: $primary;
+$excerpt-color: $primary;
+$entry-color: $primary;
+$background-nav: transparent;
+$color-nav: $primary;
+$footer-background: #2a2e2f;
+$footer-nav-color: #fff;
+$section-headings-color: $primary;
+
+$widgets-dark-color: #f0efed;
+$arrow-fill: #231f20;
+
+$sl-font-family: 'Libre Franklin', sans-serif;
+$sl-overlay-background: #000;
+$sl-navigation-color: #fff;
+//CSS VARS
+
+:root {
+  //Generales
+
+  // --body-bg: #{$body-bg};
+  --nav-bg: #{$background-nav};
+  --nav-color: #{$color-nav};
+  --big-title-size: clamp(2rem, 3.7vw + 1.3rem, 4.5rem);
+  --big-title-size2: #{fluid(32px, 72px)};
+
+  --font-family-base: #{meta.inspect($font-family-base)};
+  --font-family-secondary: #{meta.inspect($font-family-secondary)};
+  --font-family-tertiary: #{meta.inspect($font-family-tertiary)};
+  --font-family-fourth: #{meta.inspect($font-family-fourth)};
+  --font-family-bold: #{meta.inspect($font-family-base-bold)};
+
+  //Por componente
+  --nav-font-family: #{meta.inspect($nav-font-family)};
+  --nav-font-weight: #{meta.inspect($nav-font-weight)};
+
+  --category-font-family: #{meta.inspect($category-font-family)};
+  --category-font-weight: #{$category-font-weight};
+  --headings-font-family: #{meta.inspect($headings-font-family)};
+  --headings-font-weight: #{$headings-font-weight};
+  --headings-color: #{$headings-color};
+
+  --section-title-font-family: #{meta.inspect($section-title-font-family)};
+  --section-title-font-weight: #{$section-title-font-weight};
+  --section-title-color: #{meta.inspect($section-title-color)};
+  --section-title-font-size: #{fluid(18px, 26px)};
+  --section-title-text-align: left;
+
+  --entry-font-family: #{meta.inspect($entry-font-family)};
+  --excerpt-font-family: #{meta.inspect($excerpt-font-family)};
+  --excerpt-font-weight: #{$excerpt-font-weight};
+  --article-item-title-font-family: #{meta.inspect(
+      $article-item-title-font-family
+    )};
+  --article-item-title-font-weight: #{$article-item-title-font-weight};
+
+  --single-title-font-family: #{meta.inspect($single-title-font-family)};
+  --single-title-font-weight: #{meta.inspect($single-title-font-weight)};
+  --single-title-color: #{meta.inspect($single-title-color)};
+  --single-elements-color: #{meta.inspect($single-elements-color)};
+
+  --page-title-font-size: #{fluid(30px, 51px)};
+  --page-title-font-family: #{meta.inspect($page-title-font-family)};
+  --page-title-font-weight: #{meta.inspect($page-title-font-weight)};
+  --page-title-color: #{meta.inspect($page-title-color)};
+
+  --single-title-font-size: #{fluid(32px, 48px)};
+  --excerpt-font-size: #{rem(16px)};
+  --excerpt-color: #{$excerpt-color};
+  --entry-color: #{$entry-color};
+
+  --footer-nav-color: #{$footer-nav-color};
+  --footer-nav-font-size: #{fluid(10px, 12px)}; //clamp(0.8875rem, 0.7vw + 0.6rem, 1.0625rem);
+  --footer-background: #{$footer-background};
+  --footer-color: #fff;
+  --entry-font-size: #{fluid(18px, 22px)};
+  --article-item-title-font-size: fluid(16px, 20px);
+  --section-padding: 1rem 0;
+  --section-margin: 1rem 0;
+  --social-icons-font-size: 1rem;
+  --social-icons-justify-content: space-evenly;
+  --social-icons-gap: 1rem;
+  --sticky-header-margin: #{rem(85px)};
+  --wrapper-margin-top: 0;
+
+  --header-background: #fff;
+  --header-padding-x: 0;
+  --header-padding-y: 0.5rem;
+
+  --borders-color: #{meta.inspect($borders-color)};
+  --widgets-dark-color: #{meta.inspect($widgets-dark-color)};
+
+  --social-icons-color: #000;
+
+  //TODO: ELIMINAR variables que no se usan
+  --font-family-nav: #{meta.inspect($nav-font-family)};
+  --font-family-nav-weight: #{$nav-font-weight};
+  --font-family-category: #{meta.inspect($category-font-family)};
+  --font-family-category-weight: #{$category-font-weight};
+  --font-family-headings: #{meta.inspect($headings-font-family)};
+  --font-family-headings-weight: #{$headings-font-weight};
+  --color-headings: #{$headings-color};
+  --font-family-section-title: #{meta.inspect($section-title-font-family)};
+  --font-family-section-title-weight: #{$section-title-font-weight};
+  --color-section-headings: #{meta.inspect($section-headings-color)};
+  --font-family-text: #{meta.inspect($entry-font-family)};
+  --font-family-excerpt: #{meta.inspect($excerpt-font-family)};
+  --font-family-excerpt-weight: #{$excerpt-font-weight};
+  --font-family-article-title: #{meta.inspect($article-item-title-font-family)};
+  --font-family-article-title-weight: #{$article-item-title-font-weight};
+  --font-family-single-title: #{meta.inspect($single-title-font-family)};
+  --font-familiy-ads-text: #{meta.inspect($ads-text-font-family)};
+  --page-title-size: clamp(3rem, 9.4vw + 1.1rem, 7rem);
+  --article-title-size: clamp(1.625rem, 1.3vw + 1.4rem, 2.25rem);
+  --article-excerpt-size: clamp(1rem, 0.4vw + 0.9rem, 1.3rem);
+  --color-excerpt: #{$excerpt-color};
+  --color-entry-txt: #{$entry-color};
+  --footer-nav-color: #{$footer-nav-color};
+  --footer-nav-size: clamp(0.8875rem, 0.7vw + 0.6rem, 1.0625rem);
+  --footer-bg: #{$footer-background};
+  --section-title-size: #{rem(20px)}; //clamp(1.5625rem, 2.2vw + 1.1rem, 2.5rem);
+  --font-size-txt: 1rem;
+  --sections-margins: 1rem 0;
+  --background-article: transparent;
+  //--sticky-header: #{rem(85px)};
+  --social-icons-fsize: 1rem;
+  --social-icons-justify: space-evenly;
+  --bs-tertiary: #{$tertiary};
+}

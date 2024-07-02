@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "fw-festival-2024/fwf-logos",
+  "version": "0.1.0",
+  "title": "FWF - Logos",
+  "category": "widgets",
+  "icon": "dashicons-images-alt2",
+  "description": "Bloque para subir logos de patrocinadores y colaboradores.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fwf-logos",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

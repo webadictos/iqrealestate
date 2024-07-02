@@ -1,0 +1,90 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-wa-blocks-core-callout {
+  margin: 3rem 0;
+  position: relative;
+  padding: 4rem 2rem;
+  border: rem(1px) solid #2a2e2f;
+  border-radius: 0 rem(15px) 0 0;
+  max-width: var(--wa-callout-container-max-width, 100%);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 992px) {
+    padding: rem(39px) rem(32px);
+    padding-right: rem(148px);
+    padding-bottom: rem(48px);
+  }
+
+  @media screen and (max-width: 768px) {
+    br {
+      display: none;
+    }
+  }
+
+  &.is-style-wa-callout-no-border {
+    border: 0;
+    border-radius: 0;
+    padding-right: 0;
+
+    .wp-block-wa-blocks-core-callout__cta-button {
+      background-color: transparent;
+      color: #535c5d;
+      position: inherit;
+      right: unset;
+      bottom: unset;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 3rem;
+      }
+
+      a {
+        color: currentColor;
+        font-size: rem(13px);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        &::after {
+          content: '';
+          display: block;
+          width: rem(45px);
+          height: rem(18px);
+          mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6bm9uZTtzdHJva2U6IzUzNWM1ZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48ZyBpZD0iR3JvdXBfMjc2Ij48bGluZSBpZD0iTGluZV8xNjQiIGNsYXNzPSJjbHMtMSIgeDE9IjM5LjExIiB5MT0iMTQ5LjMzIiB4Mj0iMjU4LjkzIiB5Mj0iMTQ5LjMzIi8+PGxpbmUgaWQ9IkxpbmVfMTY1IiBjbGFzcz0iY2xzLTEiIHgxPSIxOTQuMzkiIHkxPSI4NS4xMSIgeDI9IjI2MC4xOCIgeTI9IjE1MC44OSIvPjxsaW5lIGlkPSJMaW5lXzE2NiIgY2xhc3M9ImNscy0xIiB4MT0iMTk0LjM5IiB5MT0iMjE0Ljg5IiB4Mj0iMjYwLjE4IiB5Mj0iMTQ5LjExIi8+PC9nPjwvc3ZnPg==);
+          mask-repeat: no-repeat;
+          mask-position: center;
+          background: #535c5d;
+          mask-size: 100%;
+        }
+      }
+    }
+  }
+
+  .wp-block-wa-blocks-core-callout__cta-button {
+    background-color: #2a2e2f;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: rem(12px) rem(18px);
+
+    @media screen and (min-width: 992px) {
+      bottom: 10%;
+    }
+    a {
+      color: currentColor;
+      font-size: rem(13px);
+      text-transform: uppercase;
+    }
+  }
+}

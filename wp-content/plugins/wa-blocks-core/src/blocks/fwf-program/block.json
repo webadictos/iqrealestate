@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "fw-festival-2024/fwf-program",
+  "version": "0.1.0",
+  "title": "FWF - Programa",
+  "category": "widgets",
+  "icon": "schedule",
+  "description": "Bloque para crear el programa del evento.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fwf-program",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

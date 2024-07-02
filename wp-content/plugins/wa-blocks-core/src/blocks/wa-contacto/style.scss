@@ -1,0 +1,151 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-wa-blocks-core-wa-contacto {
+  --wa-contacto-padding: 0 2rem;
+  padding-bottom: 2rem;
+
+  @media screen and (min-width: 992px) {
+    --wa-contacto-padding: #{rem(102px) 0};
+    padding-bottom: 0;
+  }
+
+  .wp-block-wa-blocks-core-wa-contacto__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns:
+        0.5fr 1fr 0.5fr 0.5fr 0.5fr calc(calc(100% / 3) / 3)
+        calc(calc(100% / 3) / 3) calc(calc(100% / 3) / 3);
+    }
+
+    .wp-block-wa-blocks-core-wa-contacto__background {
+      grid-column: 6 / 9;
+      grid-row: 1 / 2;
+      img {
+        width: 100%;
+        height: 100% !important;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      font-size: fluid(30px, 34px);
+      font-weight: 400;
+      margin: 2rem 0;
+    }
+    .wp-block-wa-blocks-core-wa-contacto__info-wrapper {
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
+      padding: var(--wa-contacto-padding);
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      .wp-block-wa-blocks-core-wa-contacto__info-title {
+        font-size: fluid(30px, 34px);
+        font-weight: 400;
+        margin: 2rem 0;
+      }
+      .wp-block-wa-blocks-core-wa-contacto__info-address {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        &::before {
+          content: '';
+          background-color: var(--wp--preset--color--iq-green);
+          mask-image: url('./assets/location.svg');
+          mask-repeat: no-repeat;
+          width: rem(32px);
+          height: rem(32px);
+          display: block;
+        }
+      }
+      .wp-block-wa-blocks-core-wa-contacto__info-phone {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &::before {
+          content: '';
+          background-color: var(--wp--preset--color--iq-green);
+          mask-image: url('./assets/phone.svg');
+          mask-repeat: no-repeat;
+          width: rem(32px);
+          height: rem(32px);
+          display: block;
+        }
+      }
+      .wp-block-wa-blocks-core-wa-contacto__info-email {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &::before {
+          content: '';
+          background-color: var(--wp--preset--color--iq-green);
+          mask-image: url('./assets/correo.svg');
+          mask-repeat: no-repeat;
+          width: rem(32px);
+          height: rem(32px);
+          display: block;
+        }
+      }
+
+      .wp-block-wa-blocks-core-wa-contacto__info-social {
+        p {
+          font-size: fluid(14px, 16px);
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 1rem;
+          padding: 0;
+          margin: 0;
+          color: var(--wp--preset--color--iq-green);
+          li {
+            font-size: 2em;
+            padding: 0;
+            margin: 0;
+
+            &::before {
+              display: none;
+            }
+            a {
+              color: var(--wp--preset--color--iq-green);
+            }
+          }
+        }
+      }
+    }
+    .wp-block-wa-blocks-core-wa-contacto__form-wrapper {
+      padding: var(--wa-contacto-padding);
+      grid-column: 5 / 8;
+      grid-row: 1 / 2;
+      .forminator-guttenberg {
+        background: #fff;
+        padding: 1rem 2rem;
+      }
+    }
+
+    .wa-contacto-info {
+      border-bottom: rem(0.25px) solid #939598;
+      padding: 1rem 0;
+      font-size: fluid(12px, 14px);
+    }
+  }
+}

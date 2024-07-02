@@ -1,0 +1,64 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import '../../utils/theme_functions';
+
+.wp-block-fw-festival-2024-fwf-program {
+  margin-top: rem(103px);
+  margin-bottom: rem(181px);
+  max-width: rem(940px);
+  margin-left: auto;
+  margin-right: auto;
+
+  .wp-block-fw-festival-2024-fwf-program__day-container {
+    padding-top: rem(100px);
+    &:first-child {
+      padding-top: 0;
+    }
+    .wp-block-fw-festival-2024-fwf-program__day-heading {
+      color: var(--wp--preset--color--fw-pink);
+      border-bottom: rem(2px) solid var(--wp--preset--color--fw-pink);
+      font-size: rem(42px);
+      text-transform: uppercase;
+      font-family: 'MB Empire Heavy W01 Heavy', sans-serif;
+      text-align: center;
+      padding-bottom: 1.5rem;
+      @media screen and (min-width: 992px) {
+        text-align: left;
+      }
+    }
+    .wp-block-fw-festival-2024-fwf-program__event-container {
+      margin-top: 2rem;
+      .wp-block-fw-festival-2024-fwf-program__event-heading {
+        color: var(--wp--preset--color--fw-pink);
+        border-bottom: rem(2px) solid var(--wp--preset--color--fw-pink);
+        font-size: rem(32px);
+        text-transform: uppercase;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @media screen and (min-width: 992px) {
+          text-align: left;
+        }
+      }
+    }
+
+    .wp-block-fw-festival-2024-fwf-program__activity-schedule {
+      align-items: center;
+      border-bottom: rem(2px) solid var(--wp--preset--color--fw-dark-grey);
+      font-size: rem(22px);
+      margin-top: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      @media screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr auto;
+        text-align: left;
+      }
+    }
+  }
+}

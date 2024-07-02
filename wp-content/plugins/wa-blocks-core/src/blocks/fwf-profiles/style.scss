@@ -1,0 +1,111 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-fw-festival-2024-fwf-profiles {
+  --fwf-profile-title-color: var(--wp--preset--color--fw-pink);
+  --fwf-profile-desc-color: var(--wp--preset--color--fw-light);
+  --fwf-profile-title-hover-color: var(--wp--preset--color--fw-light-green);
+  --fwf-profile-desc-hover-color: var(--wp--preset--color--fw-light);
+  --fw-bg-bottom-opacity: 1;
+  --fw-bg-layer-opacity: 0;
+  --fwf-profile-hover-bg: linear-gradient(180deg, #95285a 0%, #f93a89 100%);
+  --fwf-profile-aspect-ratio: 1/1;
+
+  &.is-style-fwf-profiles-green {
+    --fwf-profile-hover-bg: linear-gradient(180deg, #4c7e5a 0%, #9de788 100%);
+    --fwf-profile-title-color: var(--wp--preset--color--fw-light-green);
+    --fwf-profile-desc-color: var(--wp--preset--color--fw-light);
+    --fwf-profile-title-hover-color: var(--wp--preset--color--fw-pink);
+    --fwf-profile-desc-hover-color: var(--wp--preset--color--fw-light);
+    --fwf-profile-aspect-ratio: 3/4;
+  }
+  .wp-block-fw-festival-2024-fwf-profiles__container {
+    display: grid;
+    grid-template-columns: repeat(var(--fwf-profiles-grid-columns, 1), 1fr);
+    gap: 0;
+    width: var(--fwf-profiles-width, 100%);
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      --fwf-profiles-grid-columns: 3;
+    }
+
+    @media screen and (min-width: 992px) {
+      --fwf-profiles-grid-columns: 4;
+    }
+    .wp-block-fw-festival-2024-fwf-profiles-front__item {
+      position: relative;
+
+      &:hover {
+        --fw-bg-bottom-opacity: 0;
+        --fw-bg-layer-opacity: 1;
+        --fwf-profile-title-color: var(--fwf-profile-title-hover-color);
+        --fwf-profile-desc-color: var(--fwf-profile-desc-hover-color);
+      }
+
+      .wp-block-fw-festival-2024-fwf-profiles__figure {
+        position: relative;
+        margin: 0;
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 60%;
+          width: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.5) 0%,
+            #000 100%
+          );
+          mix-blend-mode: multiply;
+          transition: all 0.5s;
+          opacity: var(--fw-bg-bottom-opacity);
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: var(--fwf-profile-hover-bg);
+          mix-blend-mode: multiply;
+          transition: all 1s;
+          opacity: var(--fw-bg-layer-opacity);
+        }
+
+        .wp-block-fw-festival-2024-fwf-profiles__img {
+          width: 100%;
+          height: auto;
+          aspect-ratio: var(--fwf-profile-aspect-ratio);
+          object-fit: cover;
+        }
+      }
+
+      .wp-block-fw-festival-2024-fwf-profiles__meta {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        padding-right: 1rem;
+        word-break: break-word;
+
+        .wp-block-fw-festival-2024-fwf-profiles__meta_title {
+          color: var(--fwf-profile-title-color, #fff);
+          font-size: fluid(26px, 30px);
+          margin: 0;
+          text-transform: uppercase;
+        }
+        .wp-block-fw-festival-2024-fwf-profiles__meta_description {
+          color: var(--fwf-profile-desc-color, #fff);
+          margin: 0;
+        }
+      }
+    }
+  }
+}
