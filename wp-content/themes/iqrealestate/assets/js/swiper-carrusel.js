@@ -114,8 +114,8 @@ const swiperCarrusel = (() => {
       320: {
         slidesPerView: itemConfig.items_visible_movil,
         spaceBetween: itemConfig.items_gap,
-        slidesOffsetBefore: 30,
-        slidesOffsetAfter: 30,
+        // slidesOffsetBefore: 30,
+        // slidesOffsetAfter: 30,
       },
       768: {
         slidesPerView: itemConfig.items_visible_tablet,

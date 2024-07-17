@@ -16,7 +16,10 @@ const Single = (() => {
       .querySelector('body')
       .addEventListener('is.post-load', loadDependenciesForNewArticles);
 
-    if (document.querySelector('[data-full-image]')) {
+    if (
+      document.querySelector('[data-full-image]') ||
+      document.querySelector('.wa-gallery-lightbox')
+    ) {
       import(
         /* webpackChunkName: "lightbox" */
         /* webpackMode: "lazy" */
@@ -35,6 +38,18 @@ const Single = (() => {
       /* webpackMode: "lazy" */
       './video-portada'
     ).then(e => {});
+
+    if (!mapLoaded && document.querySelector('.single-project__map')) {
+      import(
+        /* webpackChunkName: "map-places" */
+        /* webpackMode: "lazy" */
+        './leaflet-places'
+      ).then(e => {
+        mapLoaded = true;
+        e.PlacesMap.init();
+        // console.log('Tiene mapa también');
+      });
+    }
   };
 
   const loadDependenciesForNewArticles = e => {
@@ -48,16 +63,16 @@ const Single = (() => {
 
       if (SocialShare) SocialShare.init();
 
-      if (!mapLoaded) {
-        // import(
-        //   /* webpackChunkName: "map-places" */
-        //   /* webpackMode: "lazy" */
-        //   './leaflet-places'
-        // ).then(e => {
-        //   mapLoaded = true;
-        //   e.PlacesMap.init();
-        //   // console.log('Tiene mapa también');
-        // });
+      if (!mapLoaded && document.querySelector('.single-project__map')) {
+        import(
+          /* webpackChunkName: "map-places" */
+          /* webpackMode: "lazy" */
+          './leaflet-places'
+        ).then(e => {
+          mapLoaded = true;
+          e.PlacesMap.init();
+          console.log('Tiene mapa también');
+        });
       }
     }
   };

@@ -12,22 +12,38 @@ import SimpleLightbox from 'simplelightbox';
 const currentArticle = WA_ThemeSetup.currentID;
 
 const initLightbox = postID => {
-  const imagesLightbox = new SimpleLightbox(
-    `#post-${postID} .entry-main-text img`,
-    {
-      sourceAttr: 'data-full-image',
+  if (document.querySelector('[data-full-image]')) {
+    const imagesLightbox = new SimpleLightbox(
+      `#post-${postID} .entry-main-text img`,
+      {
+        sourceAttr: 'data-full-image',
+        captionSelector: 'self',
+        captionType: 'data',
+        captionsData: 'lightboxcaption',
+        loop: false,
+        uniqueImages: true,
+        showCounter: false,
+        nav: false,
+        scrollZoom: false,
+        overlayOpacity: 0.95,
+        preloading: false,
+      }
+    );
+  }
+  if (document.querySelector('.wa-gallery-lightbox')) {
+    const galleryLightbox = new SimpleLightbox(`.wa-gallery-lightbox`, {
+      sourceAttr: 'data-src',
       captionSelector: 'self',
       captionType: 'data',
-      captionsData: 'lightboxcaption',
+      captionsData: 'caption',
       loop: false,
       uniqueImages: true,
       showCounter: false,
-      nav: false,
+      nav: true,
       scrollZoom: false,
       overlayOpacity: 0.95,
-      preloading: false,
-    }
-  );
+    });
+  }
 };
 
 const initLightboxForInfiniteScroll = e => {

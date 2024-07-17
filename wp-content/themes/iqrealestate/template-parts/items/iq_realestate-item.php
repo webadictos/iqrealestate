@@ -69,7 +69,7 @@ $thumbnail_url_css = "";
     <?php endif; ?>
 
 
-    <article <?php post_class("article-item proyecto-item" . $itemArgs['items_layout_css'], get_the_ID()); ?> <?php function_exists('wa_article_item_attributes') ? wa_article_item_attributes() : ''; ?>>
+    <article <?php post_class("article-item proyecto-item " . $itemArgs['items_layout_css'], get_the_ID()); ?> <?php function_exists('wa_article_item_attributes') ? wa_article_item_attributes() : ''; ?>>
 
         <figure class="article-item__thumbnail <?php echo get_post_format(); ?> <?php echo (!$itemArgs['items_config']['image_animation']) ? 'unanimated' : ''; ?>">
             <a class="article-item__thumbnail-link <?php echo $thumbnail_url_css; ?>" href="<?php echo $thumbnail_url; ?>" title="<?php echo get_the_title() ?>"><?php echo $thumb; ?></a>

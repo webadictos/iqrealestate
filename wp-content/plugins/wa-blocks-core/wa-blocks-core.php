@@ -26,6 +26,23 @@ if (!function_exists("wa_blocks_core_register_blocks")) {
         register_block_type(__DIR__ . "/build/blocks/wa-accordion");
         register_block_type(__DIR__ . "/build/blocks/wa-accordion-item");
         register_block_type(__DIR__ . "/build/blocks/wa-contacto");
+        register_block_type(__DIR__ . "/build/blocks/iqr-projects",array(
+            'attributes' => array(
+                'selectedProjects' => array(
+                    'type' => 'array',
+                    'default' => array(),
+                ),
+    
+                "blockTitle" => array(
+                    "type"=> "string",
+                    "default"=> ""
+                ),
+                "blockLink" => array(
+                    "type"=> "string",
+                    "default"=> ""
+                )
+            ),
+        ));
 
 
     }

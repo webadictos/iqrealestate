@@ -14,7 +14,7 @@ $page_id = get_option('page_for_posts');
 
 <main class="site-main single-main container" role="main">
 
-	<section class="articles-container">
+	<section class="projects-container">
 
 
 		<?php

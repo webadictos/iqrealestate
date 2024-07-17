@@ -113,10 +113,6 @@
   margin-left: 0;
   margin-right: 0;
 }
-.iq-hero-section .proyectos-nav li:nth-child(2) a::before {
-  background-color: transparent;
-  border: 0.03125rem solid #fff;
-}
 .iq-hero-section .proyectos-nav li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,10 +124,14 @@
   color: #fff;
 }
 .iq-hero-section .proyectos-nav li a::before {
+  background-color: transparent;
+  border: 0.03125rem solid #fff;
   content: "";
   width: 1.125rem;
   height: 1.125rem;
   display: block;
+}
+.iq-hero-section .proyectos-nav li a:hover::before {
   background-color: #74bebb;
   border: 0.03125rem solid #74bebb;
 }

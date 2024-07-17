@@ -44,7 +44,7 @@
   .hamburguer-menu__logo {
     width: 100%;
     height: auto;
-    max-width: rem(150px);
+    max-width: rem(200px);
     // transform: translateY(5px);
     // order: 2;
 
@@ -164,6 +164,9 @@
       &.show {
         display: block;
       }
+      .menu-item:has(.view-all-link) {
+        text-align: center;
+      }
       .dropdown-item {
         font-family: var(--font-family-base);
         font-weight: 400;
@@ -171,9 +174,15 @@
         text-transform: unset;
         font-size: var(--menu-hamburger-font-size, #{fluid(14px, 24px)});
         text-align: center;
+        --bs-dropdown-link-active-bg: transparent;
+        --bs-dropdown-link-active-color: #fff;
+
         &.view-all-link {
-          font-weight: 700;
+          font-weight: 400;
           text-transform: uppercase;
+          background-color: #fff;
+          color: var(--bs-primary);
+          display: inline;
         }
       }
     }

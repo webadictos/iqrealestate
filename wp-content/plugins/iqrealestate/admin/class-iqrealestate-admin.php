@@ -126,7 +126,9 @@ class Iqrealestate_Admin {
 				 'hierarchical' => true,
 				 'show_in_rest'       => true,
 				 'show_admin_column' => true, //see this line
-				 'rewrite' =>  array("slug" => "tipo-de-proyecto")
+				 'rewrite' =>  array("slug" => "proyectos"),
+				 'public' => false, // Oculta los archivos públicos
+
 			 )
 		 );
  
@@ -147,9 +149,38 @@ class Iqrealestate_Admin {
 				 'hierarchical' => true,
 				 'show_in_rest'       => true,
 				 'show_admin_column' => true, //see this line
-				 'rewrite' =>  array("slug" => "ubicacion")
+				//  'rewrite' =>  array("slug" => "ubicacion"),
+				 'public' => false, // Oculta los archivos públicos
+				 'publicly_queryable' => true, // Asegura que no se puedan hacer consultas públicas
+				 'show_in_nav_menus' => false // No se muestra en los menús de navegación		
 			 )
 		 );
+
+		 /**
+		  * Área total rentable
+		  */
+		  register_taxonomy(
+			'iq_area',
+			'iq_realestate',
+			array(
+				'labels' => array(
+					'name' => __('Área total rentable', 'iqrealestate'),
+					'add_new_item' => 'Agregar nueva área',
+					'new_item_name' => "Nueva área",
+				),
+				'show_ui' => true,
+				'show_tagcloud' => false,
+				'hierarchical' => true,
+				'show_in_rest'       => true,
+				'show_admin_column' => true, //see this line
+				// 'rewrite' =>  array("slug" => "ubicacion"),
+				'public' => false, // Oculta los archivos públicos
+				'publicly_queryable' => true, // Asegura que no se puedan hacer consultas públicas
+				'show_in_nav_menus' => false // No se muestra en los menús de navegación		
+			)
+		);
+
+
 
 		 		 /**
 		  * Ubicación
@@ -213,6 +244,19 @@ class Iqrealestate_Admin {
 				 'tab_id' => 'info',
  
 			 ),
+			 $prefix . 'gla_oficinas' => array(
+				'name' => 'GLA Oficinas',
+				'desc' => '',
+				'id'   => $prefix . 'gla_oficinas',
+				'type' => 'text',
+				'default' => '',
+
+				'attributes' => array(
+					"style"=>"width:100%",
+				),
+				'tab_id' => 'info',
+
+			),
 			 $prefix . 'estacionamiento' => array(
 				'name' => 'Estacionamiento',
 				'desc' => '',

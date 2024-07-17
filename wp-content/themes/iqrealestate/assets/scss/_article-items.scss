@@ -405,15 +405,19 @@
 
   @include media-breakpoint-up(lg) {
     display: grid;
+    min-height: rem(226px);
   }
 
   .article-item__thumbnail {
-    img {
-      border-top-right-radius: 1rem;
+    > a {
+      > img.article-item__thumbnail--img {
+        border-top-right-radius: 1rem;
 
-      --article-item-thumbnail-aspect-ratio: 20/9;
-      @include media-breakpoint-up(lg) {
-        border-radius: 0;
+        --article-item-thumbnail-aspect-ratio: 20/9;
+        @include media-breakpoint-up(lg) {
+          border-radius: 0;
+          height: 100%;
+        }
       }
     }
   }
